@@ -63,8 +63,10 @@ print((thresh_date2-thresh_date1).days)
 
 X = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
 y = np.array([1, 2, 1, 2])
-cv = KFold(n_splits=3, random_state=0)
+ 
+print('testing')
 
+cv = KFold(n_splits=3, random_state=0)
 for train_index, test_index in cv.split(X):
     print("TRAIN:", train_index, "TEST:", test_index)
 
